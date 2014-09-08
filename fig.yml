@@ -1,0 +1,10 @@
+data:
+  image: busybox
+  volumes:
+    - /var/earthcoin-data
+earthcoin:
+  build: .
+  volumes_from:
+    - data
+  ports:
+    - "15677:15677"
