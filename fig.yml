@@ -7,4 +7,4 @@ earthcoin:
   volumes_from:
     - data
   ports:
-    - "15677:15677"
+    - "25677:25677"

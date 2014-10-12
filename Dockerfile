@@ -44,4 +44,4 @@ ADD earthcoin.conf /var/tmp/earthcoin.conf
 ADD move_config.sh /etc/my_init.d/01_move_config.sh
 
 # expose earthcoin's port
-EXPOSE 15677
+EXPOSE 25677
