@@ -1,7 +1,7 @@
 data:
   image: busybox
   volumes:
-    - /var/earthcoin-data
+    - /var/lib/earthcoin
 earthcoin:
   build: .
   volumes_from:

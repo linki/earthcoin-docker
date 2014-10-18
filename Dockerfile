@@ -4,7 +4,7 @@
 #   docker build -t linki/earthcoin .
 #
 # create and name a data container:
-#   docker run -v /var/earthcoin-data --name earthcoin-data busybox true
+#   docker run -v /var/lib/earthcoin --name earthcoin-data busybox true
 #
 # run the earthcoin node:
 #   docker run -d -p 15677:15677 --volumes-from earthcoin-data linki/earthcoin
@@ -38,7 +38,7 @@ RUN mkdir -p /tmp/earthcoin && \
 ADD earthcoind.sh /etc/service/earthcoind/run
 
 # add config file from the outside
-ADD earthcoin.conf /root/earthcoin.conf
+ADD earthcoin.conf /var/tmp/earthcoin.conf
 
 # move config to linked data container after startup
 ADD move_config.sh /etc/my_init.d/01_move_config.sh
