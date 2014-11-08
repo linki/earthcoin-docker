@@ -22,7 +22,7 @@
 #   https://help.ubuntu.com/14.04/serverguide/firewall.html
 #   http://docs.docker.io/installation/ubuntulinux/#docker-and-ufw
 
-FROM phusion/baseimage:0.9.12
+FROM phusion/baseimage:0.9.15
 MAINTAINER Linki <linki+docker.com@posteo.de>
 
 # set the earthcoin version
