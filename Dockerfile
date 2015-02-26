@@ -26,7 +26,7 @@ FROM phusion/baseimage:0.9.16
 MAINTAINER Linki <linki+docker.com@posteo.de>
 
 # set the earthcoin version
-ENV EAC_VERSION 1.3.2
+ENV EAC_VERSION 1.3.3
 
 # download and extract a released binary
 RUN mkdir -p /tmp/earthcoin && \
