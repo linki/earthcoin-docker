@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y curl
 # download and extract a released binary
 RUN mkdir -p /tmp/earthcoin && \
     curl https://earthcoin.s3.amazonaws.com/releases/$EAC_VERSION/linux/earthcoin-$EAC_VERSION-linux.tar.gz | \
-      tar -C /tmp/earthcoin -xz ./bin/64/earthcoind && \
+      tar -C /tmp/earthcoin -xz bin/64/earthcoind && \
     mv /tmp/earthcoin/bin/64/earthcoind /usr/local/bin && rm -rf /tmp/earthcoin
 
 # add default config file from the outside
